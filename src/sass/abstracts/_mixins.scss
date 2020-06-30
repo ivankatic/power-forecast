@@ -1,11 +1,11 @@
 @mixin shadow-neu {
     box-shadow: 10px 10px 20px rgba(#000, .2),
-                -10px -10px 20px rgba(#fff, .8);
+                -10px -10px 20px rgba(#fff, 1);
 }
 
 @mixin shadow-neu-hover {
-    box-shadow: 3px 3px 10px rgba(#000, .2),
-                -3px -3px 10px rgba(#fff, .8);
+    box-shadow: 4px 4px 10px rgba(#000, .2),
+                -4px -4px 10px rgba(#fff, 1);
 }
 
 @mixin shadow-neu-active {

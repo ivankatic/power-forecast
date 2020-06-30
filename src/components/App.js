@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../sass/main.scss';
 import Modal from './Modal';
+import LatLng from './LatLng';
 
 class App extends Component {
 	state = {
@@ -27,6 +28,8 @@ class App extends Component {
 						<button className='button--wide' onClick={e => {
 							this.showModal(e);
 						}}>Select on map</button>
+
+						<LatLng />
 
 						<div className='manual'>
 							<input
