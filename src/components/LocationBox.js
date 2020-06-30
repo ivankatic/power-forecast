@@ -19,7 +19,7 @@ class LocationBox extends Component {
                     <div className='location-box__parameter-value'>{this.props.location.lng}</div>
                 </div>
 
-                <button className='location-box__button'>Done</button>
+                <button className='location-box__button' onClick={this.props.onClose}>Done</button>
             </div>
         );
     }

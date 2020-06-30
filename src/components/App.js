@@ -16,7 +16,7 @@ class App extends Component {
 	render() {
 		return (
 			<div className='outer'>
-				<Modal show={this.state.show} />
+				<Modal show={this.state.show} onClose={this.showModal}/>
 				<main className='box'>
 					<h1 className='box__title'>Solar power forecast</h1>
 
@@ -24,7 +24,7 @@ class App extends Component {
 						<p className='box__instructions'>
 							Please select the power system location
 						</p>
-						<button className='button--wide' show={this.showModal} onClick={e => {
+						<button className='button--wide' onClick={e => {
 							this.showModal(e);
 						}}>Select on map</button>
 
