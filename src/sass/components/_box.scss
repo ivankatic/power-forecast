@@ -1,0 +1,28 @@
+.box {
+    width: 800px;
+    padding: 0 50px 60px;
+    display: block;
+    margin: auto;
+    background-color: $base;
+    border-radius: 40px;
+
+    @include shadow-neu;
+
+    &__title {
+        display: block;
+        margin: auto;
+        text-align: center;
+        margin-top: 30px;
+        font-weight: 800;
+    }
+
+    &__content {
+        margin: 120px auto 100px;
+        display: block;
+        text-align: center;
+    }
+
+    &__instructions {
+        
+    }
+}

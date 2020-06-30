@@ -1,0 +1,23 @@
+.combobox {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 11;
+
+    &__input {
+        width: 500px;
+        height: 50px;
+        border: 1px solid $light-grey;
+        padding: 10px 20px;
+        box-shadow: 0 0 15px rgba(0,0,0, .25);
+    }
+
+    &__popover {
+        z-index: 11;
+    }
+
+    &__option {
+        z-index: 11;
+    }
+}

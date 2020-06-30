@@ -1,0 +1,23 @@
+.button--wide {
+    display: block;
+    margin: 20px auto;
+    font-size: 1.6rem;
+    color: $base-text;
+    padding: 15px 50px;
+    background-color: $base;
+    border-radius: 40px;
+    border: 0;
+    transition: box-shadow .25s;
+
+    @include shadow-neu;
+
+    &:hover {
+        @include shadow-neu-hover;
+        color: $purple;
+    }
+
+    &:active {
+        @include shadow-neu-active;
+        color: $purple;
+    }
+}

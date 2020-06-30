@@ -1,0 +1,44 @@
+.manual {
+    margin-top: 50px;
+    line-height: 1.6rem;
+    vertical-align: middle;
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__label {
+        font-size: 1.4rem;
+    }
+
+    &__checkbox-button {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-color: $base;
+        margin-right: 10px;
+        position: relative;
+        vertical-align: middle;
+
+        @include shadow-neu-check;
+
+        &::after {
+            content: '';
+            display: block;
+            height: 8px;
+            width: 8px;
+            background-color: $purple;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+    }
+
+
+
+    &__checkbox:checked ~ &__label &__checkbox-button::after{
+        opacity: 1;
+    }
+}

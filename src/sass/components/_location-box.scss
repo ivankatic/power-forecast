@@ -1,0 +1,44 @@
+.location-box {
+    position: absolute;
+    right: 80px;
+    bottom: 80px;
+    z-index: 11;
+    width: 200px;
+    background-color: $base-text;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+
+    &__title {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 10px auto 30px;
+    }
+
+    &__parameter {
+        font-size: 14px;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    &__parameter-value {
+        display: block;
+        font-weight: 400;
+    }
+
+    &__button {
+        padding: 8px 20px;
+        background-color: $light-grey;
+        border: none;
+        margin: 20px auto;
+        transition: all .25s;
+        color: $base-text;
+        font-size: 16px;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: #fff;
+        }
+    }
+}

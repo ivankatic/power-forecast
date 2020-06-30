@@ -1,0 +1,26 @@
+.modal {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+
+    &__background {
+        position: absolute;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, .5);
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        transition: all 0.25s;
+        display: block;
+        opacity: 1;
+    }
+
+    &__hide {
+        display: none;
+        opacity: 0;
+    }
+}
