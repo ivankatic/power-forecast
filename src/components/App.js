@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../sass/main.scss';
 import Modal from './Modal';
-import LatLng from './LatLng';
+import PowerPlantData from './PowerPlantData';
 
 class App extends Component {
 	state = {
@@ -21,6 +21,8 @@ class App extends Component {
 				<main className='box'>
 					<h1 className='box__title'>Solar power forecast</h1>
 
+					<PowerPlantData />
+
 					<div className='box__content'>
 						<p className='box__instructions'>
 							Please select the power system location
@@ -28,8 +30,6 @@ class App extends Component {
 						<button className='button--wide' onClick={e => {
 							this.showModal(e);
 						}}>Select on map</button>
-
-						<LatLng />
 
 						<div className='manual'>
 							<input

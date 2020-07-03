@@ -5,8 +5,8 @@
     margin: auto;
     background-color: $base;
     border-radius: 40px;
-
-    @include shadow-neu;
+    box-shadow: 20px 20px 40px rgba(#000, .2),
+                -20px -20px 40px rgba(#fff, 1);
 
     &__title {
         display: block;
