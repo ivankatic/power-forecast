@@ -50,6 +50,13 @@ const validate = ({ latitude, longitude }) => {
     return errors;
 };
 
+const mapStateToProps = (state) => {
+    console.log(state.location.lat);
+    return { latitude: state.location.lat, longitude: state.location.lng };
+}
+
+LatLng = connect(mapStateToProps)(LatLng);
+
 export default reduxForm({
     form: 'LatLng',
     validate
