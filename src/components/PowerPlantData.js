@@ -4,6 +4,7 @@ import FormLatLng from './FormLatLng';
 import FormSpecs from './FormSpecs';
 import Modal from './Modal';
 import { connect } from 'react-redux';
+import solcast from '../api/solcast';
 
 class PowerPlantData extends Component {
     constructor(props) {
@@ -16,6 +17,25 @@ class PowerPlantData extends Component {
             disableLatLng: true
         };
     };
+
+    onCalculateSubmit = async term => {
+        const response = await solcast.get(
+					`/world_pv_power/forecasts?format=json`,
+					{
+						    params: {
+							latitude: this.props.lat,
+							longitude: this.props.lng,
+							capacity: 1,
+							tilt: 45,
+							azimuth: 135,
+							install_date: '2015-09-25',
+							hours: 10,
+						},
+					}
+				);
+
+        console.log(response);
+    }
 
     manualLatLng = () => {
         this.setState(prevState => ({
@@ -44,7 +64,7 @@ class PowerPlantData extends Component {
             <div>
             <Modal show={this.state.show} onClose={this.showModal} />
             <main className='box'>
-                <h1 className='box__title'>Solar power forecast</h1>
+                <h1 className='box__title' onClick={this.onCalculateSubmit}>Solar power forecast</h1>
 
                     <div>
                         {page === 1 && <FormLatLng
@@ -77,9 +97,10 @@ class PowerPlantData extends Component {
 }; */
 
 const mapStateToProps = (state) => {
+    console.log(state);
     return { 
         lat: state.location.lat,
-        lng: state.location.lng
+        lng: state.location.lng,
     };
 }
 

@@ -5,7 +5,7 @@ import renderField from './RenderField';
 
 const FormLatLng = props => {
     const { handleSubmit, showModal, disableLatLng, manualLatLng, lat, lng } = props;
-    console.log(lat, lng);
+
     return (
         <form onSubmit={handleSubmit}>
 
@@ -55,8 +55,8 @@ const FormLatLng = props => {
 };
 
 export default reduxForm({
-    form: 'wizard', // <------ same form name
-    destroyOnUnmount: false, // <------ preserve form data
-    forceUnregisterOnUnmount: true, // <------ unregister fields on unmount
-    validate
+	form: 'wizard', // <------ same form name
+	destroyOnUnmount: false, // <------ preserve form data
+	forceUnregisterOnUnmount: true, // <------ unregister fields on unmount
+	validate
 })(FormLatLng);
