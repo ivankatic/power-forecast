@@ -11,7 +11,11 @@ class Modal extends Component {
 
     onClose = e => {
         this.props.onClose && this.props.onClose(e);
-    };    
+    };   
+    
+    addMapValues = () => {
+        this.props.addMapValues();
+    }
 
     render() {
         if (!this.props.show) { return null };
