@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import FormLatLng from './FormLatLng';
-import { Field, reduxForm, formValueSelector } from 'redux-form';
+import { reduxForm, formValueSelector } from 'redux-form';
 
 class LocationBox extends Component {
     clickDone = () => {
 		this.props.onClose();
-		console.log(this.props);
 		this.props.change('latitude', this.props.location.lat);
 		this.props.change('longitude', this.props.location.lng);
     }

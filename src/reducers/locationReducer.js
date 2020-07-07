@@ -1,9 +1,9 @@
-export default (location={ lat: 0.0000, lng: 0.0000}, action) => {
+export default (state={ lat: 0, lng: 0}, action) => {
     switch (action.type) {
         case 'SELECTED_LOCATION':
             return action.payload;
 
-        default:
-            return location;
+       default:
+            return state;
     }
 };
