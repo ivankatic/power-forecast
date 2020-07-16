@@ -1,0 +1,58 @@
+.forecast {
+    &__box {
+    width: 430px;
+    max-width: 90%;
+    height: 95px;
+    padding: 0 50px;
+    display: block;
+    margin: 0 auto 40px;
+    background-color: $base;
+    border-radius: 40px;
+    box-shadow: 20px 20px 40px rgba(#000, .2),
+                -20px -20px 40px rgba(#fff, 1);
+
+        &__title {
+            display: block;
+            margin: auto;
+            text-align: center;
+            padding-top: 30px;
+            font-weight: 800;
+        }
+
+    }
+
+    &__col {
+        width: 50%;
+        display: inline-block;
+        height: 95px;
+        vertical-align: top;
+        padding-top: 15px;
+        
+        &--title {
+            text-align: center;
+        }
+    }
+
+    &__time {
+        display: block;
+        font-size: 1.1rem;
+    }
+
+    &__day {
+        display: block;
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    &__date {
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    &__power {
+        text-align: center;
+        font-size: 2.5rem;
+        color: $purple;
+    }
+
+}

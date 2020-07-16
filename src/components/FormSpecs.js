@@ -12,39 +12,52 @@ const FormSpecs = props => {
     const { handleSubmit, previousPage, pristine, submitting } = props;
 
     const onSubmit = (formValues) => {
-        console.log(formValues);
         props.fetchForecast(formValues);
     }
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)} className="form">
 
             <div className='box__content'>
+                <div className="input-col">	
+                    <Field
+                        name="capacity"
+                        type="text"
+                        component={renderField}
+                        label="Capacity (kW)"
+                        className='text-input'
+                    />
+                </div>
+                
+                <div className="input-col">	
+                    <Field
+                        name="tilt"
+                        type="text"
+                        component={renderField}
+                        label="Tilt"
+                        className='text-input'
+                    />
+                </div>
 
-                <Field
-                    name="capacity"
-                    type="text"
-                    component={renderField}
-                    label="Capacity"
-                />
-                <Field
-                    name="tilt"
-                    type="text"
-                    component={renderField}
-                    label="Tilt"
-                />
-                <Field
-                    name="azimuth"
-                    type="text"
-                    component={renderField}
-                    label="Azimuth"
-                />
-                <Field
-                    name="date"
-                    type="text"
-                    component={renderField}
-                    label="Installation Date"
-                />
+                <div className="input-col">	
+                    <Field
+                        name="azimuth"
+                        type="text"
+                        component={renderField}
+                        label="Azimuth"
+                        className='text-input'
+                    />
+                </div>
+
+                <div className="input-col">	
+                    <Field
+                        name="date"
+                        type="date"
+                        component={renderField}
+                        label="Installation Date"
+                        className='text-input'
+                    />
+                </div>
 
             </div>
 

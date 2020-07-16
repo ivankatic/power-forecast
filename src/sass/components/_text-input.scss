@@ -1,0 +1,21 @@
+.text-input {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    border: 0;
+    height: 30px;
+    padding: 5px 10px;
+    @include shadow-neu-active;
+    background-color: $base;
+    width: 190px;
+
+    &:focus {
+        border-bottom: 1px solid $purple;
+        color: $purple;
+    }
+
+    &__error {
+        color: red;
+        font-size: 1.2rem;
+    }
+}

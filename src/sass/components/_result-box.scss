@@ -1,4 +1,4 @@
-.box {
+.result-box {
     width: 800px;
     padding: 0 50px 60px;
     display: block;
@@ -22,4 +22,7 @@
         text-align: center;
     }
 
+    &--outer {
+        margin-top: 50px;
+    }
 }
