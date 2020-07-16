@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "25a408e1892835b4063deaf616b0ae10",
+    "revision": "2fcf7ed6d8cb52a6004f2d402846e50b",
     "url": "/power-forecast/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/power-forecast/static/css/2.6eff3e32.chunk.css"
   },
   {
-    "revision": "0a666574a66de244e708",
+    "revision": "459391cfdaa163303564",
     "url": "/power-forecast/static/css/main.3bb19eab.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/power-forecast/static/js/2.c2b880fd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0a666574a66de244e708",
-    "url": "/power-forecast/static/js/main.83848017.chunk.js"
+    "revision": "459391cfdaa163303564",
+    "url": "/power-forecast/static/js/main.d909021c.chunk.js"
   },
   {
     "revision": "d19018c0965331acb106",

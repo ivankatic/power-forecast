@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/power-forecast/static/css/main.3bb19eab.chunk.css",
-    "main.js": "/power-forecast/static/js/main.83848017.chunk.js",
-    "main.js.map": "/power-forecast/static/js/main.83848017.chunk.js.map",
+    "main.js": "/power-forecast/static/js/main.d909021c.chunk.js",
+    "main.js.map": "/power-forecast/static/js/main.d909021c.chunk.js.map",
     "runtime-main.js": "/power-forecast/static/js/runtime-main.b45bccc8.js",
     "runtime-main.js.map": "/power-forecast/static/js/runtime-main.b45bccc8.js.map",
     "static/css/2.6eff3e32.chunk.css": "/power-forecast/static/css/2.6eff3e32.chunk.css",
     "static/js/2.c2b880fd.chunk.js": "/power-forecast/static/js/2.c2b880fd.chunk.js",
     "static/js/2.c2b880fd.chunk.js.map": "/power-forecast/static/js/2.c2b880fd.chunk.js.map",
     "index.html": "/power-forecast/index.html",
-    "precache-manifest.e1fed58b42bd63e7d4b2275d6f546753.js": "/power-forecast/precache-manifest.e1fed58b42bd63e7d4b2275d6f546753.js",
+    "precache-manifest.6865fcddd0e07bcfe0dbb9281de8f161.js": "/power-forecast/precache-manifest.6865fcddd0e07bcfe0dbb9281de8f161.js",
     "service-worker.js": "/power-forecast/service-worker.js",
     "static/css/2.6eff3e32.chunk.css.map": "/power-forecast/static/css/2.6eff3e32.chunk.css.map",
     "static/css/main.3bb19eab.chunk.css.map": "/power-forecast/static/css/main.3bb19eab.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.6eff3e32.chunk.css",
     "static/js/2.c2b880fd.chunk.js",
     "static/css/main.3bb19eab.chunk.css",
-    "static/js/main.83848017.chunk.js"
+    "static/js/main.d909021c.chunk.js"
   ]
 }
