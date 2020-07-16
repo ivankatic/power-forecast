@@ -11,8 +11,8 @@ class App extends Component {
 			<div className='outer'>
 				<Router history={history}>
 					<>
-						<Route path='/' exact component={PowerPlantData} />
-						<Route path='/forecast' component={Forecast} />
+						<Route path='/power-forecast/' exact component={PowerPlantData} />
+						<Route path='/power-forecast/forecast' component={Forecast} />
 					</>
 				</Router>
 			</div>
