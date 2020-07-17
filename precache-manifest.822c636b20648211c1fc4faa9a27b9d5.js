@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ddcfffa601fc5a8aaba65996f993702a",
+    "revision": "001ed9c1f78243be3fd2fe1a719bdb7b",
     "url": "/power-forecast/index.html"
   },
   {
