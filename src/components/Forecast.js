@@ -81,10 +81,10 @@ class Forecast extends Component {
             return (
             <div className='forecast__box' key={index}>
                 <div className='forecast__col'>
-                    <div className='forecast__time'>
-                        {day.values[1].th2}:{day.values[1].tm2} - {day.values[day.values.length - 1].th2}:{day.values[day.values.length - 1].tm2}</div>
-                    <div className='forecast__day'>{day.dn}</div>
                     <div className='forecast__date'>{day.d}.{day.m}.</div>
+                    <div className='forecast__day'>{day.dn}</div>
+                    <div className='forecast__time'>
+                        {day.values[1].th2}:{day.values[1].tm2} - {day.values[day.values.length - 1].th2}:{day.values[day.values.length - 1].tm2}</div> 
                 </div>
 
                 <div className='forecast__col'>
